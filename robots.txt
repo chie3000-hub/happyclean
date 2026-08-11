@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+Sitemap: https://symphonious-dieffenbachia-a8f1b6.netlify.app/sitemap.xml
