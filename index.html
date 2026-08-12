@@ -184,7 +184,7 @@
         카카오 친구추가
       </a>
       <a href="#booking" class="hidden md:flex items-center justify-center h-12 px-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:-translate-y-0.5 shadow-sm hover:shadow-md transition-all cursor-pointer active:opacity-80">
-        예약하기
+        문의하기
       </a>
       <!-- Mobile Menu Toggle -->
       <button id="mobileMenuBtn" class="md:hidden flex items-center justify-center p-2 text-primary cursor-pointer" aria-label="메뉴 열기">
@@ -892,47 +892,23 @@
   <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
     <!-- Booking Form + FAQ -->
     <div id="booking" class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-start" style="scroll-margin-top: 96px;">
-      <!-- Booking Form -->
-      <div class="bg-surface-container-lowest rounded-xl p-8 clean-shadow border border-outline-variant/30">
-        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">살균 청소 예약하기</h2>
-        <p class="font-body-md text-body-md text-on-surface-variant mb-8">아래 양식을 작성해 주시면 2시간 이내에 예약을 확인해 드립니다.</p>
-        <form id="bookingForm" name="booking" class="space-y-6" onsubmit="handleBookingSubmit(event)" data-netlify="true">
-          <input type="hidden" name="form-name" value="booking"/>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex flex-col">
-              <label class="font-label-sm text-label-sm text-on-surface mb-2" for="name">성함 *</label>
-              <input class="bg-surface border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring font-body-md" id="name" name="name" placeholder="홍길동" type="text" required/>
-            </div>
-            <div class="flex flex-col">
-              <label class="font-label-sm text-label-sm text-on-surface mb-2" for="phone">연락처 *</label>
-              <input class="bg-surface border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring font-body-md" id="phone" name="phone" placeholder="080-0000-0000" type="tel" required/>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <label class="font-label-sm text-label-sm text-on-surface mb-2" for="ac-type">에어컨 종류 *</label>
-            <select class="bg-surface border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring font-body-md appearance-none" id="ac-type" name="ac-type" required>
-              <option disabled selected value="">선택해주세요</option>
-              <option value="벽걸이 에어컨 (70,000원~)">벽걸이 에어컨 (70,000원~)</option>
-              <option value="스탠드 에어컨 (120,000원~)">스탠드 에어컨 (120,000원~)</option>
-              <option value="벽걸이+스탠드 (170,000원~)">벽걸이+스탠드 (170,000원~)</option>
-              <option value="시스템 에어컨 1WAY (100,000원~)">시스템 에어컨 1WAY (100,000원~)</option>
-              <option value="시스템 에어컨 4WAY (120,000원~)">시스템 에어컨 4WAY (120,000원~)</option>
-            </select>
-          </div>
-          <div class="flex flex-col">
-            <label class="font-label-sm text-label-sm text-on-surface mb-2" for="location">거주 지역</label>
-            <input class="bg-surface border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring font-body-md" id="location" name="location" placeholder="예: 지역명을 입력해주세요" type="text"/>
-          </div>
-          <div class="flex flex-col">
-            <label class="font-label-sm text-label-sm text-on-surface mb-2" for="date">희망 일정</label>
-            <input class="bg-surface border border-outline-variant rounded-lg p-3 text-on-surface input-focus-ring font-body-md" id="date" name="date" type="date"/>
-          </div>
-          <button id="submitBtn" class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-title-md text-title-md py-4 rounded-lg transition-all shadow-md hover:shadow-lg flex justify-center items-center gap-2 hover:-translate-y-0.5" type="submit">
-            <span id="submitText">문의하기 (무료)</span>
-            <span class="material-symbols-outlined">send</span>
-          </button>
-          <p class="text-center font-body-md text-[12px] text-on-surface-variant">입력하신 정보는 견적 및 예약 확인 이외에 사용하지 않습니다.</p>
-        </form>
+      <!-- Contact CTA -->
+      <div class="bg-surface-container-lowest rounded-xl p-8 clean-shadow border border-outline-variant/30 flex flex-col justify-center gap-6">
+        <div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">예약 / 문의하기</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">전화 또는 카카오톡으로 편하게 연락주세요.<br>무료 견적 상담 환영합니다.</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <a href="tel:01088770753" class="flex items-center justify-center gap-3 h-14 rounded-xl bg-primary text-on-primary font-title-md text-title-md hover:-translate-y-0.5 shadow-sm hover:shadow-md transition-all">
+            <span class="material-symbols-outlined text-[22px]" style="font-variation-settings:'FILL' 1;">call</span>
+            010-8877-0753
+          </a>
+          <a href="http://pf.kakao.com/_XYTiX/friend" target="_blank" rel="noopener" class="flex items-center justify-center gap-3 h-14 rounded-xl font-title-md text-title-md hover:-translate-y-0.5 shadow-sm hover:shadow-md transition-all" style="background:#FEE500;color:#1A1A1A;">
+            <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="#3C1E1E" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.477 2 2 5.82 2 10.5c0 2.92 1.713 5.5 4.32 7.07L5.1 22l5.13-3.43c.63.18 1.27.27 1.77.27 5.523 0 10-3.82 10-8.4C22 5.82 17.523 2 12 2z"/></svg>
+            카카오 친구추가
+          </a>
+        </div>
+        <p class="font-label-sm text-label-sm text-on-surface-variant text-center">무료 견적·상담 환영 &nbsp;|&nbsp; 010-8877-0753</p>
       </div>
 
       <!-- FAQ -->
