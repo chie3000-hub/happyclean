@@ -4,4 +4,4 @@ Allow: /
 User-agent: Yeti
 Allow: /
 
-Sitemap: https://fancy-semolina-0b0f82.netlify.app/sitemap.xml
+Sitemap: https://chie3000-hub.github.io/happyclean/sitemap.xml
