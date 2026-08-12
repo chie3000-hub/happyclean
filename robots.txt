@@ -4,4 +4,4 @@ Allow: /
 User-agent: Yeti
 Allow: /
 
-Sitemap: https://symphonious-dieffenbachia-a8f1b6.netlify.app/sitemap.xml
+Sitemap: https://fancy-semolina-0b0f82.netlify.app/sitemap.xml
